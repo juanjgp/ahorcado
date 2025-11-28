@@ -101,12 +101,14 @@ def mostrar_palabra_oculta(palabra_oculta):
 def pierdes_juego(vidas):
     if vidas == 0:
         print("¡Te has quedado sin vidas!. PIERDES EL JUEGO.")
+        input("PRESIONA ENTER PARA FINALIZAR EL PROGRAMA.")
         sys.exit()
 
 # Función ganas el juego si completas la palabra
 def ganas_juego(palabra_oculta, palabra_elegida):
     if palabra_oculta == palabra_elegida:
         print(f"¡Has acertado la palabra! era {palabra_elegida}. GANAS EL JUEGO.")
+        input("PRESIONA ENTER PARA FINALIZAR EL PROGRAMA.")
         sys.exit()
 
 # PROGRAMA PRINCIPAL
